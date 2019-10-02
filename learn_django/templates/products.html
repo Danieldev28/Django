@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+   
+    <h2>All my products</h2>
+  
+    <td>
+    {% for item in data %}
+        <tr>Name:{{item.name}}</tr>
+        <br>
+        <tr>Price:{{item.price}}</tr>
+        <br>
+        <tr>Description:{{item.description}}</tr>
+        <a href="edit/{{item.id}}"><button>Edit</button></a>
+        <hr>
+        {% empty %}
+        <h2>Nothing to show</h2>
+        {% endfor %}
+        
+    </td>
+    
+</body>
+</html>

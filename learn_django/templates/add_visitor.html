@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <h2>Fill In The Form To Add A Visitor</h2>
+    <form method = "POST">
+    {% csrf_token %}
+        <input type ="text" name="name" placeholder="name of visitor">
+        <br>
+        <input type ="number" name="age" placeholder="age">
+        <br>
+        <input type ="text" name="email" placeholder="email">
+        <br>
+        <input type="submit" value="New Visitor">
+        <br>
+        <br>
+        <a href="visitors">Go back to Visitor page</a>
+        
+        
+    </form>
+    
+</body>
+</html>

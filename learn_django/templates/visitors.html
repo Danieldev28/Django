@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+   
+    <h2>All my Visitors</h2>
+  
+    <td>
+    {% for item in data %}
+        <tr>Name:{{item.name}}</tr>
+        <br>
+        <tr>Age:{{item.age}}</tr>
+        <br>
+        <tr>Email:{{item.email}}</tr>
+        <hr>
+        {% empty %}
+        <h2>Nothing to show</h2>
+        {% endfor %}
+   
+    </td>
+    <a href="add_visitor">Add Visitor</a>
+</body>
+</html>
