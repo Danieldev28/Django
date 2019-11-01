@@ -40,6 +40,8 @@ INSTALLED_APPS = [
     'learn_django'
 ]
 
+AUTH_USER_MODEL ='learn_django.CustomUser'
+
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',

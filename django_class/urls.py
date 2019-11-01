@@ -27,7 +27,7 @@ urlpatterns = [
     url(r'^visitors$', visitors),
     url(r'^add_visitor$', add_visitor),
     url(r'^add_product$', add_product),
-    url(r'^edit/(?P<id>\d+)', edit_product)
+    url(r'^edit/(?P<id>\d+)', edit_product),
     
     # url(r'test$', dostuff),
     # url(r'^doanything', doanything)

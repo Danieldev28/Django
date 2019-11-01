@@ -1,4 +1,5 @@
 from django.db import models
+from django.contrib.auth.models import AbstractUser
 
 # Create your models here.
 class Product(models.Model):
@@ -17,3 +18,13 @@ class Visitor(models.Model):
       
     def __str__(self):
         return (self.name)
+
+class CustomUser (AbstractUser):
+    address = models.CharField(max_length= 300,null=True)
+    is_employee = models.BooleanField(default=False)
+    is_customer= models.BooleanField(default=False)
+    is_active = models.BooleanField(default=True)
+    
+    
+    
+
